@@ -1,33 +1,34 @@
-LEIAME:
+README:
 =======
 
-O "Point Me QA" permite a identificação semi-automática de pontos de referência em imagens médicas 3D e 4D, os quais podem ser utilizados como referenciais para realizar registro de imagem, para validação de registro de imagem ou para quantificação de movimentação. Isso pode ser feito por usuários sem experiência, visando fornecer suporte acadêmico para o avanço das pesquisas na área de Radioterapia Guiada por Imagem (IGRT).
+"Point Me QA" enables the semi-automatic identification of landmarks in 3D and 4D medical images. These landmarks can be used as reference points for image registration, image registration validation, or motion quantification. The software can be operated by users with no prior experience, aiming to provide academic support for the advancement of research in the field of Image-Guided Radiation Therapy (IGRT).
 
 =========================
-Para executar o programa:
-1. Descompacte o arquivo baixado.
-2. Na pasta "PointMeQA", dê dois cliques para executar o arquivo também de nome "PointMeQA".
-3. Siga os passos de como utilizá-lo e verifique os arquivos gerados e salvos dentro dessa mesma pasta. 
+How to run the program:
+1. Extract the downloaded file.
+2. Open the "PointMeQA" folder and double-click the executable file, also named "PointMeQA".
+3. Follow the instructions on how to use the software and check the output files generated and saved in the same folder.
 
 ==============
-Como utilizar:
-1. Informe o nome do paciente e a dimensão das imagens a serem utilizadas.
-2. Através do botão 'Selecionar', localize o diretório geral que contém os diretórios das imagens e das estruturas de interesse dos pacientes.
-3. Especifique por extenso o nome do diretório da imagem escolhida como referência, assim como a modalidade dela - CT ou CBCT.
-4. Informe por extenso os nomes das segmentações de interesse que deseja utilizar, separados por vírgula. Essas segmentações serão utilizadas apenas como limitadoras de regiões para identificação dos pontos. Se deixado em branco, o algoritmo utiliza a imagem toda para extração.
-5. Se forem imagens 3D, é possível especificar uma segunda imagem, escolhida como imagem móvel, se desejado. Selecione também se há transformação entre as duas imagens, resultantes de um registro, especificando o nome por extenso, que devem estar no diretório do paciente em formato .tfm. Caso seja uma imagem 4D, especifique o número das fases respiratórias de interesse para identificação, separadas por vírgula, sendo de 0 a 90, com passo de 10.
-6. Selecione a(s) distância(s) de interesse que será utilizada como métrica para identificação dos pontos correspondentes entre as imagens.
-7. Selecione em quais regiões da imagem os pontos devem ser identificados, se apenas de alto ou de alto e de baixo contraste.
-8. Por fim, selecione as caixas de acordo com o interesse em: extrair os nomes das segmentações que acompanham as imagens para utilizá-las como limitadoras de região de interesse; gerar um relatório de análise utilizando os pontos de referência identificados; limitar a distância residual entre os pontos correspondentes, eliminando aqueles muito distantes e possivelmente de falsa correspondência; gerar os arquivos de coordenadas dos pontos de cada imagem compatível para leitura no software 3D Slicer; realizar análise de dose utilizando os pontos identificados, caso as imagens acompanhem distribuição de dose; e calcular a Informação Mútua (IM) entre as imagens fornecidas.
-9. Clique no botão 'Iniciar' para executar o algoritmo. É comum que o programa apresente que não está respondendo enquanto é executado, no entanto, os resultados serão apresentados normalmente.
-10. Após o término, selecione se deseja escolher quais pontos correspondentes manter — modo de extração semi-automático.
-11. Terminada a execução, que pode durar minutos ou horas dependendo das imagens utilizadas, todos os arquivos resultantes estarão salvos no diretório deste executável.
-12. Caso pretenda executar outro caso, feche e abra o executável novamente.
+How to use:
+1. Enter the patient's name and the dimensionality of the images to be used.
+2. Click the 'Browse' button to locate the main directory containing the patients' image and structure subdirectories.
+3. Enter the full name of the directory containing the image selected as the reference image, as well as its modality (CT or CBCT).
+4. Enter the full names of the segmentations of interest to be used, separated by commas. These segmentations will only be used to restrict the regions in which landmarks are identified. If this field is left blank, the algorithm will use the entire image for landmark extraction.
+5. For 3D images, a second image may optionally be specified as the moving image. You may also indicate whether a transformation resulting from image registration exists between the two images. If so, enter its full name. The transformation file must be located in the patient's directory and must be in .tfm format. For 4D images, specify the respiratory phases of interest for landmark identification, separated by commas. Values must range from 0 to 90, in increments of 10.
+6. Select the distance(s) of interest to be used as metrics for identifying corresponding landmarks between images.
+7. Select the image regions in which landmarks should be identified: high-contrast regions only, or both high- and low-contrast regions.
+8. Finally, select the checkboxes according to your requirements: extract the names of the segmentations accompanying the images to use them as regions of interest (ROI) constraints; generate an analysis report using the identified landmarks; set a maximum residual distance between corresponding landmarks, eliminating those that are too far apart and may represent false correspondences; generate landmark coordinate files for each image, compatible with the 3D Slicer software; perform dose analysis using the identified landmarks, provided that the images include dose distributions; and calculate the Mutual Information (MI) between the provided images.
+9. Click the 'Start' button to run the algorithm. It is normal for the program to display a "Not Responding" message while processing. However, the results will be generated normally.
+10. Once processing is complete, select whether you wish to manually choose which corresponding landmarks to retain (semi-automatic extraction mode).
+11. Depending on the images used, processing may take anywhere from a few minutes to several hours. Once completed, all output files will be saved in the same directory as the executable file.
+12. If you wish to process another case, close the executable and open it again.
 
 =========================
-Este programa de computador foi registrado no Instituto Nacional da Propriedade Industrial (INPI) com processo de número BR512024000601-0.
-Em caso de maiores dúvidas, é possível obter ajuda através do e-mail: amandamazer18@gmail.com
+This computer program was registered with the Brazilian National Institute of Industrial Property (INPI) under registration number BR512024000601-0.
+For further information or assistance, please contact: amandamazer18@gmail.com
 
 =========================
-Como citar / referenciar:
-MAZER, Amanda C. Desenvolvimento de um algoritmo para avaliação de registro de imagem em Radioterapia Guiada por Imagem (IGRT). 2024. Tese (Doutorado em Tecnologia Nuclear) – Instituto de Pesquisas Energéticas e Nucleares – IPEN-CNEN/SP. São Paulo.
+How to cite / reference:
+
+MAZER, Amanda C. Development of an algorithm for image registration assessment in Image-Guided Radiation Therapy (IGRT). 2024. PhD Dissertation (Nuclear Technology) – Institute for Energy and Nuclear Research (IPEN-CNEN/SP), São Paulo, Brazil.
