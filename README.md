@@ -1,7 +1,7 @@
 README:
 =======
 
-"Point Me QA" enables the semi-automatic identification of landmarks in 3D and 4D medical images. These landmarks can be used as reference points for image registration, image registration validation, or motion quantification. The software can be operated by users with no prior experience, aiming to provide academic support for the advancement of research in the field of Image-Guided Radiation Therapy (IGRT).
+Point Me QA enables the semi-automatic identification of landmarks in 3D and 4D medical images using Scale-Invariant Feature Transform (SIFT). These landmarks can be used as reference points for image registration, image registration validation, or motion quantification. The software can be operated by users with no prior experience, aiming to provide academic support for the advancement of research in the field of Image-Guided Radiation Therapy (IGRT).
 
 =========================
 How to run the program:
