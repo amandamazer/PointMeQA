@@ -1,7 +1,7 @@
 LEIAME:
 =======
 
-O "Point Me QA" permite a identificação semi-automática de pontos de referência em imagens médicas 3D e 4D, os quais podem ser utilizados como referenciais para realizar registro de imagem, para validação de registro de imagem ou para quantificação de movimentação. Isso pode ser feito por usuários sem experiência, visando fornecer suporte acadêmico para o avanço das pesquisas na área de Radioterapia Guiada por Imagem (IGRT).
+O Point Me QA permite a identificação semi-automática de pontos de referência em imagens médicas 3D e 4D, usando a técnica Scale-Invariant Feature Transform (SIFT). Tais pontos podem ser utilizados como referenciais para realizar registro de imagem, para validação de registro de imagem ou para quantificação de movimentação. Isso pode ser feito por usuários sem experiência, visando fornecer suporte acadêmico para o avanço das pesquisas na área de Radioterapia Guiada por Imagem (IGRT).
 
 =========================
 Para executar o programa:
