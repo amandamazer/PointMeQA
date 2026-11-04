@@ -5,7 +5,7 @@ O Point Me QA permite a identificação semi-automática de pontos de referênci
 
 =========================
 Para executar o programa:
-1. Descompacte o arquivo baixado através do link https://acesse.one/PointMeQA.
+1. Descompacte o arquivo baixado.
 2. Na pasta "PointMeQA", dê dois cliques para executar o arquivo também de nome "PointMeQA".
 3. Siga os passos de como utilizá-lo e verifique os arquivos gerados e salvos dentro dessa mesma pasta. 
 
